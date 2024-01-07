@@ -21,7 +21,8 @@ p {
     color: rgb(85, 85, 85);
 }
 
-/* CROLL ANIMATION*/
+/* SCROLL ANIMATION */
+
 .hiddenl {
    opacity: 0;
    filter:blur(5px);
@@ -90,11 +91,13 @@ a {
 
  #hamburger-nav {
     display: none;
+    
  }
 
  .hamburger-menu {
     position: relative;
-    display: inline-block;    
+    display: inline-block; 
+    z-index: 2;   
  }
 
  .hamburger-icon {
@@ -117,7 +120,7 @@ a {
     position: absolute;
     top:100%;
     right: 0;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
     width: fit-content;
     max-height: 0;
     overflow: hidden;
@@ -194,6 +197,7 @@ a {
    height: 400px;
    width: 400px;
    margin: auto 0; 
+   z-index: 1;
  }
 
  .section__text {
@@ -376,6 +380,7 @@ article .icon {
 }
 
 /* PROJECT SECTION*/
+
 
 #projects {
    position: relative;
